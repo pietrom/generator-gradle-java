@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = '<%= groupId %>'
+version = '1.0.0-SNAPSHOT'
+
+description = """<%= description %>"""
+
+def javaVersion = <%= javaVersion %>
+sourceCompatibility = javaVersion
+targetCompatibility = javaVersion
+
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+repositories {
+	maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    testCompile group: 'junit', name: 'junit', version:'<%= junitVersion %>'
+}

@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Pietro Martinelli",
+      "authorEmail": "amicofragile@gmail.com",
+      "authorUrl": "http://javapeanuts.blogger.com"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "generator-gradle-java",
+  "version": "0.0.1",
+  "description": "Basic Java project setup, based on Gradle build tool",
+  "homepage": "https://github.com/pietrom/generator-gradle-java",
+  "author": {
+    "name": "Pietro Martinelli",
+    "email": "amicofragile@gmail.com",
+    "url": "http://javapeanuts.blogger.com"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator gradle java generator-gradle-java",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "yeoman-test": "^1.6.0",
+    "yeoman-assert": "^3.0.0",
+    "coveralls": "^2.12.0",
+    "nsp": "^2.6.3",
+    "eslint": "^3.18.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^19.0.1"
+  },
+  "dependencies": {
+    "yeoman-generator": "^1.0.0",
+    "chalk": "^1.1.3",
+    "yosay": "^2.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "prepublish": "nsp check",
+    "pretest": "eslint . --fix",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "repository": "pietrom/generator-gradle-java",
+  "license": "GPL-3.0"
+}
